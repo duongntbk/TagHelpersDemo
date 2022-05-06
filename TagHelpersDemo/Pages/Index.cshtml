@@ -4,7 +4,15 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>HelloWorldTagHelper demo</h2>
+<hello-world></hello-world>
+<h2>ExchangeRateRowTagHelper demo</h2>
+<exchange-rate-table include-time-stamp="true">
+    <tr source="JPY" target="VND"></tr>
+</exchange-rate-table>
+<h2>AllExchangeRateRowsTagHelper demo</h2>
+<exchange-rate-table include-time-stamp="true">
+    <all-exchange-rates target="JPY"></all-exchange-rates>
+</exchange-rate-table>
+<h2>HttpContextTagHelper demo</h2>
+<http-context></http-context>

@@ -69,3 +69,11 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%
+}
